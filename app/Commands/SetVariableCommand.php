@@ -11,7 +11,7 @@ use function Termwind\{render};
 class SetVariableCommand extends Command
 {
 
-    const SET_DEV_PROTECTED = true;
+    const SET_DEV_PROTECTED = false;
     const SET_STAGING_PROTECTED = true;
     /**
      * The signature of the command.
