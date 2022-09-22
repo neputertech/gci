@@ -13,4 +13,6 @@ return [
         'BRANCH',
         'URL',
     ],
+
+    'set_dev_protected' => env('SET_DEV_PROTECTED', false),
 ];
