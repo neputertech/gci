@@ -7,3 +7,7 @@
 
 
 <img src="https://raw.githubusercontent.com/neputertech/gci/master/gciinit.png"  width="500" />
+
+
+### Build
+`php gitlab-ci app:build gci`

@@ -92,6 +92,22 @@ class SetVariableCommand extends Command
                 "masked" => false,
                 "environment_scope" => "*"
             ],
+            'SONAR_TOKEN' => [
+                "variable_type" => "env_var",
+                "key" => "SONAR_TOKEN",
+                "value" => "",
+                "protected" => true,
+                "masked" => false,
+                "environment_scope" => "production"
+            ],
+            'SONAR_PROJECT_KEY' => [
+                "variable_type" => "env_var",
+                "key" => "SONAR_PROJECT_KEY",
+                "value" => "",
+                "protected" => true,
+                "masked" => false,
+                "environment_scope" => "production"
+            ],
         ], $new_arr);
 
         $this->info("Initializing...");
