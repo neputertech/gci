@@ -10,6 +10,7 @@ return [
         'SERVER_IP',
         'SERVER_PORT',
         'SERVER_PRIVATE_KEY',
+        'SERVER_DEPLOYMENT_SCRIPT',
         'BRANCH',
         'URL',
     ],
