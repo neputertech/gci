@@ -12,6 +12,7 @@ class SetVariableCommand extends Command
 {
 
     const SET_DEV_PROTECTED = true;
+    const SET_QA_PROTECTED = true;
     const SET_STAGING_PROTECTED = true;
     /**
      * The signature of the command.
@@ -42,10 +43,11 @@ class SetVariableCommand extends Command
 
         $project_id = $this->ask('Enter Project ID:');
 
-        $env = $this->choice('Enter environment scope', ['dev', 'staging', 'production', 'all'], 'all');
+        $env = $this->choice('Enter environment scope', ['dev', 'qa', 'staging', 'production', 'all'], 'all');
 
         $pre_environment_keys = [
             'dev' => 'DEV',
+            'qa' => 'QA',
             'staging' => 'STAGE',
             'production' => 'PROD'
         ];

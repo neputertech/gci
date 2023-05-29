@@ -16,4 +16,5 @@ return [
     ],
 
     'set_dev_protected' => env('SET_DEV_PROTECTED', false),
+    'set_qa_protected' => env('SET_QA_PROTECTED', true),
 ];
